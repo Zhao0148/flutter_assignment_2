@@ -15,12 +15,16 @@ class HomeScreen extends StatelessWidget {
             child: Image.asset('assets/img/bird2.png', fit: BoxFit.cover),
           ),
           Expanded(
+            child:
+            Transform.rotate(
+              angle: 1,
             child: Container(
               child: const Center(
                 child: Text(
                   'This is the bottom half with a dark background',
                 ),
               ),
+            ),
             ),
           ),
         ],
